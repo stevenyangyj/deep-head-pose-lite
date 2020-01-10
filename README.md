@@ -29,4 +29,23 @@ net.eval()
 The Pre-trained model in "model" folder, but the model is not very robust to image quality, we will release more 
 robust model in the future.
 
-Thanks for natanielruiz's excellent work again.
+Thanks for natanielruiz's excellent work again.  
+
+## Update  
+Hi, guys, I finally have time to update this project...  
+I uploaded the lastest hopenet-lite model with official ShuffleNetV2 from Pytorch torchvision, you can use it like this:  
+'''  
+import stable_hopenetlite  
+pos_net = stable_hopenetlite.shufflenet_v2_x1_0()  
+saved_state_dict = torch.load('model/shuff_epoch_120.pkl', map_location="cpu")  
+pos_net.load_state_dict(saved_state_dict, strict=False)  
+pos_net.eval()  
+'''  
+The Pre-trained model named "shuff_epoch_120.pkl" in "model" folder. If you think my training is not perfect, you could re-train the model. Just enjoy yourself !  
+
+Here are some examples:  
+![](https://github.com/OverEuro/deep-head-pose-lite/blob/master/figs/th1.png)  
+![](https://github.com/OverEuro/deep-head-pose-lite/blob/master/figs/th2.png)  
+![](https://github.com/OverEuro/deep-head-pose-lite/blob/master/figs/th3.png)  
+![](https://github.com/OverEuro/deep-head-pose-lite/blob/master/figs/th4.png)  
+![](https://github.com/OverEuro/deep-head-pose-lite/blob/master/figs/th5.png)
