@@ -16,7 +16,7 @@ The link: https://github.com/natanielruiz/deep-head-pose
 
 You can run the network on CPU (i7-8700 six cores) with **35 FPS** or GPU (RTX 2070) with **130 FPS**
 
-If you used natanielruiz's code in your project, then do not need to change anything except the nueral network you used.
+**If you used natanielruiz's code in your project, then do not need to change anything except the nueral network you used. At the same time, please refer to the [training code](https://github.com/natanielruiz/deep-head-pose/blob/master/code/train_hopenet.py) of natanielruiz's project for training your own model (if you need)**
 
 '''  
 import hopenetlite_v2  
