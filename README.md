@@ -2,7 +2,7 @@
 A lite-version hopenet for head pose estimation with PyTorch  
 
 ## Note  
-Hopenet-lite uses unofficial-implement ShuffleNetV2 as backbone network, and now the lastest PyTorch contains official ShuffleNetV2 with various width. If you are seeking for stable performance, please use official implementation and re-train hopenet-lite!  
+Hopenet-lite uses unofficial-implement ShuffleNetV2 as backbone network, and now the lastest PyTorch contains official ShuffleNetV2 with various width. If you are seeking for stable performance, please use official implementation and re-train hopenet-lite! I have uploaded the lastest hopenet-lite model with official ShuffleNetV2 from Pytorch torchvision (Please refer to the "Update" part)  
 '''  
 import torchvision.models as models  
 shufflenet = models.shufflenet_v2_x1_0(pretrained=True)  
